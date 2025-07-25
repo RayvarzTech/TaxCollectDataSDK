@@ -184,5 +184,9 @@ public record InvoiceHeaderDto
      * مجموع ارزش ارزی
      */
     public decimal? Tocv { get; init; }
+    /**
+     * شماره اقتصادی آژانس
+     */
+    public string? Tinc { get; init; }
     
 }
