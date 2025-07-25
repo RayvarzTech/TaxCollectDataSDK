@@ -11,7 +11,7 @@ namespace TaxCollectData.Sample;
 
 internal class TaxApiWithPkcs8SignatureSample
 {
-    private const string MEMORY_ID = "A11216";
+    private const string MEMORY_ID = "A111KE";
 
     private static readonly string s_pemFilePath = @$"{AppContext.BaseDirectory}\private.pem";
 

@@ -12,6 +12,8 @@ internal static class PacketTypeConstants
     public const string PacketTypeGetServiceStuffList = "GET_SERVICE_STUFF_LIST";
     public const string PacketTypeGetEconomicCodeInformation = "GET_ECONOMIC_CODE_INFORMATION";
     public const string PacketTypeGetFiscalFullInformation = "GET_FISCAL_FULL_INFORMATION";
+    public const string PacketGetTaxpayerInfo = "GET_TAXPAYER_INFO";
+    public const string PacketGetTaxpayerArticle6Status = "GET_TAXPAYER_ARTICLE6_STATUS";
     public const string PacketTypeGetFiscalInformation = "GET_FISCAL_INFORMATION";
     public const string PacketTypeReceiveInvoiceConfirm = "RECEIVE_INVOICE_CONFIRM";
 }

@@ -34,4 +34,6 @@ public class NormalProperties : IProperties
     public string GetServerInformationApiAddress => Path.Combine(_clientTypes[_clientType], ApiVersion, Sync, PacketTypeConstants.PacketTypeGetServerInformation);
     public string GetServiceStuffListApiAddress => Path.Combine(_clientTypes[_clientType], ApiVersion, Sync, PacketTypeConstants.PacketTypeGetServiceStuffList);
     public string GetEconomicCodeInformationApiAddress => Path.Combine(_clientTypes[_clientType], ApiVersion, Sync, PacketTypeConstants.PacketTypeGetEconomicCodeInformation);
+    public string GetTaxpayerInfoApiAddress => Path.Combine(_clientTypes[_clientType], ApiVersion, Sync, PacketTypeConstants.PacketGetTaxpayerInfo);
+    public string GetArticle6StatusApiAddress => Path.Combine(_clientTypes[_clientType], ApiVersion, Sync, PacketTypeConstants.PacketGetTaxpayerArticle6Status);
 }

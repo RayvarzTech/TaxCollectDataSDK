@@ -136,28 +136,36 @@ public class InvoiceBodyDto
      * totalServiceStuffAmount
      */
     public decimal? Tsstam { get; init; }
-    
+
     // Export Fields
-    
+
     /**
      * وزن خالص
      */
     public decimal? Nw { get; init; }
+
     /**
      * ارزش ریالی کالا
      */
     public decimal? Ssrv { get; init; }
+
     /**
      * ارزش ارزی کالا
      */
     public decimal? Sscv { get; init; }
-    /**
-    * تفاوت نرخ خرید و فروش ارز/کارمزد فروش ارز
-    */
-    public decimal? pspd { get; init; }
+
     /**
     * عیار طلا
     */
-    public decimal? cui { get; init; }
+    public decimal? Cui { get; init; }
     
+    /**
+* نرخ خرید ارز     
+    */
+    public decimal? Cpr { get; init; }
+
+    /**
+* ماخذ مالیات بر ارزش افزوده در الگوی فروش ارز     
+    */
+    public long? Sovat { get; init; }
 }

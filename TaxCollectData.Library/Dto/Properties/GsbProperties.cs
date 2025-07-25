@@ -32,4 +32,6 @@ public class GsbProperties : IProperties
     public string GetServerInformationApiAddress => $"{_clientTypes[_clientType]}GETServerInformation";
     public string GetServiceStuffListApiAddress => $"{_clientTypes[_clientType]}GetServiceStuffList";
     public string GetEconomicCodeInformationApiAddress => $"{_clientTypes[_clientType]}GetEconmicCodeInformation";
+    public string GetTaxpayerInfoApiAddress => $"{_clientTypes[_clientType]}GetTaxpayerInfo";
+    public string GetArticle6StatusApiAddress => $"{_clientTypes[_clientType]}GetArticle6Status";
 }

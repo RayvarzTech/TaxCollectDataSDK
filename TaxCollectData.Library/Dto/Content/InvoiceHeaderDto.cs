@@ -161,32 +161,116 @@ public record InvoiceHeaderDto
      * tax17
      */
     public decimal? Tax17 { get; init; }
-    
+
     // Export Fields
-    
+
     /**
      * شماره کوتاژ اظهارنامه گمرکی
      */
     public string Cdcn { get; init; }
+
     /**
      * تاریخ کوتاژ اظهارنامه گمرکی
      */
     public int? Cdcd { get; init; }
+
     /**
      * مجموع وزن خالص
      */
     public decimal? Tonw { get; init; }
+
     /**
      * مجموع ارزش ریالی
      */
     public decimal? Torv { get; init; }
+
     /**
      * مجموع ارزش ارزی
      */
     public decimal? Tocv { get; init; }
+
     /**
      * شماره اقتصادی آژانس
      */
     public string? Tinc { get; init; }
-    
+
+    /**
+     * شماره بارنامه
+     */
+    public string? Lno { get; init; }
+
+    /**
+     * شماره بارنامه مرجع
+     */
+    public string? Lrno { get; init; }
+
+    /**
+     * کشور مبدا
+     */
+    public string? Ocu { get; init; }
+
+    /**
+     * شهر مبدا
+     */
+    public string? Oci { get; init; }
+
+    /**
+     * کشور مقصد
+     */
+    public string? Dco { get; init; }
+
+    /**
+     * شهر مقصد
+     */
+    public string? Dci { get; init; }
+
+    /**
+     * شناسه ملی/شماره ملی/ شناسه مشارکت مدنی/ کد فراگیر اتباع غیر ایرانی گیرنده
+     */
+    public string? Tid { get; init; }
+
+    /**
+     * شناسه ملی/شماره ملی/ شناسه مشارکت مدنی/ کد فراگیر اتباع غیر ایرانی گیرنده
+     */
+    public string? Rid { get; init; }
+
+    /**
+     * نوع بارنامه/نوع حمل
+     */
+    public byte? Lt { get; init; }
+
+    /**
+     * شماره ناوگان
+     */
+    public string? Cno { get; init; }
+
+    /**
+     * شناسه ملی/شماره ملی/ شناسه مشارکت مدنی/ کد فراگیر اتباع غیر ایرانی راننده (در حمل و نقل جاده ای)
+     */
+    public string? Did { get; init; }
+
+    /**
+     * کالاهای حمل شده
+     */
+    public List<ShippingGoodDto>? Sg { get; init; }
+
+    /**
+     * شماره اعلامیه فروش
+     */
+    public string? Asn { get; init; }
+
+    /**
+     * تاریخ اعلامیه فروش
+     */
+    public int? Asd { get; init; }
+
+    /**
+     * شناسه یکتای بیمه نامه
+     */
+    public string? In { get; init; }
+
+    /**
+     * شناسه یکتای الحاقیه
+     */
+    public string? An { get; init; }
 }

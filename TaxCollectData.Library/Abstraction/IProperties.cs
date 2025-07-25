@@ -17,4 +17,6 @@ public interface IProperties
     string GetServerInformationApiAddress { get; }
     string GetServiceStuffListApiAddress { get; }
     string GetEconomicCodeInformationApiAddress { get; }
+    string GetTaxpayerInfoApiAddress { get; }
+    string GetArticle6StatusApiAddress { get; }
 }
