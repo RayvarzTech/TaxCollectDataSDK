@@ -155,5 +155,9 @@ public class InvoiceBodyDto
     * تفاوت نرخ خرید و فروش ارز/کارمزد فروش ارز
     */
     public decimal? pspd { get; init; }
+    /**
+    * عیار طلا
+    */
+    public decimal? cui { get; init; }
     
 }

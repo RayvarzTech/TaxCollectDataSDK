@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Company>Mohaymen</Company>
-        <Version>0.0.17</Version>
+        <Version>0.0.18</Version>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
