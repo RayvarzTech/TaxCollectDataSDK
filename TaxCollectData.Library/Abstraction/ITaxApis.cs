@@ -15,6 +15,7 @@ namespace TaxCollectData.Library.Abstraction
         HttpResponse<AsyncResponseModel?>? SendTspInvoices(List<InvoiceDtoWrapper> invoices, Dictionary<string, string>? headers);
         Task<HttpResponse<AsyncResponseModel?>?> SendTspInvoicesAsync(List<InvoiceDtoWrapper> invoices, Dictionary<string, string>? headers);
         ServerInformationModel? GetServerInformation();
+        void SetEncryptionConfig(KeyDto key);
         Task<ServerInformationModel?> GetServerInformationAsync();
         List<InquiryResultModel>? InquiryByUidAndFiscalId(List<UidAndFiscalId> uidAndFiscalIds);
         Task<List<InquiryResultModel>?> InquiryByUidAndFiscalIdAsync(List<UidAndFiscalId> uidAndFiscalIds);
