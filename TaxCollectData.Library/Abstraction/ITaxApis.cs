@@ -30,5 +30,6 @@ namespace TaxCollectData.Library.Abstraction
         Task<SearchResultModel<ServiceStuffModel>?> GetServiceStuffListAsync(SearchDto searchDto);
         EconomicCodeModel? GetEconomicCodeInformation(string economicCode);
         Task<EconomicCodeModel?> GetEconomicCodeInformationAsync(string economicCode);
+        void GetServerInformationManual();
     }
 }
