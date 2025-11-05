@@ -31,5 +31,6 @@ namespace TaxCollectData.Library.Abstraction
         EconomicCodeModel? GetEconomicCodeInformation(string economicCode);
         Task<EconomicCodeModel?> GetEconomicCodeInformationAsync(string economicCode);
         void GetServerInformationManual();
+        void SetEncryptionConfig(KeyDto key);
     }
 }

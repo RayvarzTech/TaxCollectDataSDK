@@ -299,7 +299,13 @@ namespace TaxCollectData.Library.Api
                     false)
                 .ConfigureAwait(false);
         }
-        
+
+        public void SetEncryptionConfig(KeyDto key)
+        {
+            _encryptionConfig.TaxOrgPublicKey = key.Key;
+            _encryptionConfig.EncryptionKeyId = key.Id;
+        }
+
         private void SetEncryptionConfig(ServerInformationModel? responseData)
         {
             if (responseData?.PublicKeys == null || !responseData.PublicKeys.Any())
