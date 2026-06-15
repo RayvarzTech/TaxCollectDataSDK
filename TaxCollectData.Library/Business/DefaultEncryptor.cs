@@ -102,7 +102,7 @@ namespace TaxCollectData.Library.Business
                     Modulus = rsaKeyParameters.Modulus.ToByteArrayUnsigned(),
                     Exponent = rsaKeyParameters.Exponent.ToByteArrayUnsigned()
                 };
-                var rsa = RSA.Create();
+                using var rsa = RSA.Create();
                 rsa.ImportParameters(rsaParameters);
                 return Convert.ToBase64String(rsa.Encrypt(Encoding.UTF8.GetBytes(stringToBeEncrypted),
                     RSAEncryptionPadding.OaepSHA256));
